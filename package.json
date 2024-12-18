@@ -1,0 +1,36 @@
+{
+  "name": "stc-po",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "adal-angular": "^1.0.17",
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "ckeditor5-build-decoupled-document-base64-upload-word-count": "^15.0.1",
+    "cleave.js": "^1.5.3",
+    "core-js": "^3.6.4",
+    "moment": "^2.24.0",
+    "msal": "^1.2.0",
+    "node-sass": "^4.13.0",
+    "numeral": "^2.0.6",
+    "react": "^16.11.0",
+    "react-datepicker": "^2.10.0",
+    "react-dom": "^16.11.0",
+    "react-iframe": "^1.8.0",
+    "react-pdf": "^4.1.0",
+    "react-scripts": "2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

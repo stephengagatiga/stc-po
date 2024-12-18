@@ -1,0 +1,67 @@
+@import './variables';
+
+$barheight: 50px;
+.topBar {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    height: $barheight;
+    max-height: $barheight;
+    color: white;
+    background-color: $accentColor;
+    font-size: 1rem;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+
+        li {
+            height: $barheight;
+            max-height: $barheight;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 15px;
+            background-color: $accentColor;
+            // border-bottom: 3px solid $primaryColor;
+
+            //prevent text selection
+            -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+                background-color: lighten($color: $accentColor, $amount: 5); 
+                // border-bottom-color: $secondaryColor;
+
+                // border-bottom: 3px solid $primaryColor;
+            }
+        }
+    }
+}
+
+.menuItemNavSelected {
+    color: white;
+    background-color: darken($color: $accentColor, $amount: 5) !important; 
+    // border-bottom-color: $accentColor !important;
+}
+
+.topBarMenuNotSelectable {
+
+    li {
+        &:hover {
+            cursor: default !important;
+            background-color: $accentColor !important;
+        }
+    }
+}

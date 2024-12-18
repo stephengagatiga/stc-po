@@ -1,0 +1,119 @@
+table {
+    // display: flex;
+    width: 100%;
+}
+
+
+.tableRowForm, .tableHeaderRowForm {
+    min-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tableHeaderRowForm {
+    font-weight: bold;
+    color: $textColor;    
+    border-bottom: 1px solid silver;
+}
+
+.tableInputLabel {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.tableListView {
+    width: 100%;
+    border-spacing: 0;
+  
+    thead {
+      background-color: $primaryColor;
+      color: $textColor;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+      white-space: nowrap;
+        td {
+          padding: 5px 10px;
+        }
+    }
+  
+    tbody {
+      tr {
+        td {
+          border-bottom: 1px solid $secondaryColor;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+  
+  .tableForm {
+    border-spacing: 0;
+
+    thead {
+      background-color: $primaryColor;
+      color: $textColor;
+    }
+  
+    td {
+      &:last-of-type {
+        background-color: white;
+      }
+    }
+  }
+  
+  
+  .tableRowClickable {
+    tbody {
+      tr {
+        &:hover {
+          cursor: pointer;
+          background-color: $secondaryColor;
+          border-bottom: 1px solid $secondaryColor;
+
+        }
+      }
+    }
+  }
+
+  .tableRowNotClickable {
+      &:hover {
+        cursor: default !important;
+        background-color: white !important;
+      }
+
+      td {
+        border-bottom: none !important;
+      }
+  }
+
+  .newPOTable {
+    label {
+      white-space: nowrap;
+    }
+
+    td {
+      > div {
+          display: flex;
+    
+          input,select {
+            flex-grow: 1;
+          }
+
+          //for react date picker to contain all spaces
+         
+      }
+
+      &:last-of-type {
+        width: 10%;
+      }
+    }
+
+  }

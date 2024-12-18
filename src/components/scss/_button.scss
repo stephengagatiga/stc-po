@@ -1,0 +1,48 @@
+%button {
+    padding: 5px 15px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white; 
+    text-align: center;
+    min-width: 100px;
+  }
+  
+  .buttonPrimary {
+    @extend %button;
+    background-color: $accentColor;
+  
+    &:hover {
+      background-color: darken($accentColor, 5%);
+    }
+  }
+  
+  .buttonSecondary {
+    @extend %button;
+    background-color: $secondaryColor;
+  
+    &:hover {
+      background-color: darken($secondaryColor, 5%);
+    }
+  }
+
+  .smallX {
+    padding: 3px 8px;
+    background-color: $secondaryColor;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($secondaryColor, 5%);
+    }
+
+  }
+
+  .uploadLabel {
+    @extend %button;
+    background-color: $secondaryColor;
+  
+    &:hover {
+      background-color: darken($secondaryColor, 5%);
+    }
+  }  

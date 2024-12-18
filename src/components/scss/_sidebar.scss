@@ -1,0 +1,47 @@
+@import './variables';
+
+.sidebar {
+    font-family: "Segoe UI Web (West European)",Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    flex-basis: 200px;
+    color: $textColor;
+    background-color: $primaryColor;
+    font-size: 1rem;
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      height: 100%;
+      margin: 0;
+  
+      li {
+        div {
+          white-space: nowrap;
+          padding: 10px;
+          cursor: pointer;
+    
+          &:hover {
+            color: $textColor;
+            background-color: $secondaryColor;
+          } 
+        
+        }   
+        
+        ul {
+          height: 0;
+          overflow: hidden;
+          transition: height 0.5s;
+  
+          li {
+            padding-left: 20px;
+          }
+        }
+  
+  
+      }
+    }
+  }
+  
+  .sideBarItemNavSelected {
+    color: $textColor;
+    background-color: $secondaryColor;
+  }

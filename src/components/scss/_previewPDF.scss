@@ -1,0 +1,46 @@
+
+.previewPDF {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: black, $alpha: 0.3);
+    margin: auto;
+
+    .document {
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        background-color: darken(silver, $amount: 50);
+
+        .topBar {
+            background-color: silver;
+            height: 40px;
+            width: 100%;
+
+            .previewCloseBtn {
+                margin-left: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        > :nth-child(2) {
+            height: 90%;
+            overflow-y: scroll;
+            background-color: transparent;
+
+            canvas {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

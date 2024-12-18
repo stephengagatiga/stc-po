@@ -1,0 +1,23 @@
+.content {
+    flex-grow: 1;
+    font-size: 1rem;
+
+    // width: 1010px;
+    // max-width: 1010px;
+    // margin: 0 auto;
+
+    // background: white;;
+}
+
+.pOList, .newPO, .editPO, .viewPO, .approverContent, .supplierContent {
+    background-color: white;
+    color: $textColor;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    min-height: 500px;
+}
+
+.newPO, .editPO, .viewPO, .approverContent, .supplierContent {
+    width: 1010px;
+}
+
